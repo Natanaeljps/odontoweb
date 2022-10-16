@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: violet;
+}
+
+header{
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+main{
+    text-align: center;
+    margin-top: 3rem;
+}
+main div{
+    margin: 1rem 0;
+}
+
+
+/***************VARIAVEIS****************/
+:root {
+    /*===fonts===*/
+  --title-font: 'Concert One', cursive;
+  --logo-font: 'Fredoka One', cursive;
+  --body-font: 'Chivo', sans-serif;
+  }
+
+  /***************HEADER****************/
+
+  .logo{
+    font-family: var(--logo-font);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    
+
+  }
+  .title{
+    font-family: var(--title-font);
+    font-size: 1.5rem;
+  }
+
+  /***************MAIN****************/
+
+  .txt{
+    font-family: var(--body-font);
+    font-weight: bold;
+  }
+
+  .txt-radio{
+    text-align: center;
+    font-family: var(--body-font);
+  }
+
+  .box{ 
+    text-align: center;
+    height: 2rem;
+    border: none;
+    border-radius: 1rem;
+
+    margin-bottom: 1rem;
+  }
+  .cycle{
+    margin-bottom: 1rem;
+  }
