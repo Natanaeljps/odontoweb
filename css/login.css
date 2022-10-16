@@ -66,3 +66,18 @@ main div{
   .cycle{
     margin-bottom: 1rem;
   }
+
+   /***************BUTTON****************/
+
+   .clear{
+    background: none;
+    border: none;
+   }
+
+   .solid{
+    background: lightseagreen;
+    border: none;
+    border-radius: 2rem;
+    height: 3rem;
+    width: 7rem;
+   }
