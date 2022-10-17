@@ -5,4 +5,13 @@ function backLogin() {
     window.location.href = "/html/login.html"
     console.log('depois');
 }
-console.log('oi');
+
+function backRegister() {
+    console.log('antes');
+    window.location.href = "/html/register.html"
+    console.log('depois');
+}
+
+
+
+

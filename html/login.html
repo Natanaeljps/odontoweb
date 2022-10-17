@@ -4,14 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Concert+One&family=Fredoka+One&display=swap" rel="stylesheet">
+    <!--STYLE-->
+    <link rel="stylesheet" href="/css/global.css">
+
+    <title>OdontoWeb - Login</title>
+
 </head>
 <body>
-    <h1>LOGIN</h1>
+    
+    <header>
+        <div class="logo">OdontoWeb</div>
+        <div class="title"> Acesse sua Conta:</div>
+    </header>
 
+    <main>
 
+        <form class="form-shild">
+            <div>
+                <div class="txt"><label>Seu Email:</label></div>
+                <input id="email" type="email" class="box" 
+                onchange="onChangeEmail()" placeholder="Seu email">
 
-    <!--PTOJECT-->
-    <script src="/js/global.js"></script>
+                <div class="error" id="email-required-error">
+                    Email é obrigatório
+                </div>
+                <div class="error" id="email-invalid-error">
+                    Email é inválido
+                </div>
+            </div>
+            
+            <div>
+                <div class="txt"><label>Senha:</label></div>
+                <input type="password" class="box" id="password" 
+                onchange="onChangePassword()" placeholder="Sua senha">
+
+                <div class="error" id="password-required-error">
+                    Senha é obrigatório
+                </div>
+            </div>
+
+            <div><button type="button" class="clear" 
+                onclick = "backRegister()">Fazer Meu Cadastro</button></div>
+            <div><button type="button" class="clear" id="recover-password-button" 
+                onclick="recoverPassword()"  disabled="true"> Recuperar Senha</button></div>
+            <div><button type="button" class="solid" id="login-button" onclick = "login()" 
+                disabled="true">Entrar!</button></div>
+
+        </form>
+
+    </main>
+
+    <!--FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="/js/init-firebase.js"></script>
+    
+
+    <!--==PROJECT==-->
+     <script src="/js/login.js"></script>
+     <script src="/js/global.js"></script>
+     <script src="/js/validaction.js"></script>
+    
 </body>
 </html>

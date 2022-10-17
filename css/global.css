@@ -16,8 +16,9 @@ main{
     text-align: center;
     margin-top: 3rem;
 }
-main div{
-    margin: 1rem 0;
+
+button{
+  margin: 1.5rem 0;
 }
 
 
@@ -49,7 +50,7 @@ main div{
     font-family: var(--body-font);
     font-weight: bold;
 
-    
+    margin-top: 2rem;
   }
 
   .txt-radio{
@@ -68,6 +69,15 @@ main div{
   
   .cycle{
     margin-bottom: 1rem;
+  }
+
+  .error{
+    display: none;
+    background: red;
+    color: white;
+    width: 14rem;
+
+    margin-left: 4.7rem;
   }
 
    /***************BUTTON****************/
@@ -89,4 +99,17 @@ main div{
 
     font-family: var(--body-font);
     font-weight: bold;
+   }
+
+
+
+   @media(min-width:800px){
+
+    .error{
+  
+      margin-left: 35.7rem;
+    }
+
+
+
    }

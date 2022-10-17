@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Concert+One&family=Fredoka+One&display=swap" rel="stylesheet">
+    <!--STYLE-->
+    <link rel="stylesheet" href="/css/global.css">
+
+    <title>OdontoWeb - login</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">OdontoWeb</div>
+        <div class="title"> Faça sua Conta:</div>
+    </header>
+
+    <main>
+
+        <form class="form-shild">
+            <div>
+                <div class="txt"><label>Seu Nome:</label></div>
+                <input id="user" type="text" class="box"
+                 placeholder="Nome Completo">
+
+                 <div class="txt"><label>Sua Idade:</label></div>
+                <input id="age" type="number" class="box"
+                 placeholder="Quantos anos"> 
+            <div>
+                <div class="txt">Sexo:</div>
+                <label class="txt-radio" id="sex-m">Masc</label>
+                <input type="radio" name="type" class="cycle" checked>
+                <label class="txt-radio" id="sex-f">Femin</label>
+                <input type="radio" name="type" class="cycle">
+                <label class="txt-radio" id="sex-i">Não identificar</label>
+                <input type="radio" name="type" class="cycle">
+            </div>
+
+                <div class="txt"><label>Seu Email:</label></div>
+                <input id="email" type="email" class="box" onchange="onChangeEmail()"
+                 placeholder="Seu email">
+            </div>
+
+           
+            
+            <div>
+
+                <div class="error" id="email-required-error">
+                    Email é obrigatório
+                </div>
+                <div class="error" id="email-invalid-error">
+                    Email é inválido
+                </div>
+            
+                <div class="txt"><label>Senha:</label></div>
+                <input type="password" class="box" id="password" 
+                onchange="onChangePassword()" placeholder="Sua senha">
+
+                <div class="error" id="password-required-error">
+                    Senha é obrigatório
+                </div>
+                <div class="error" id="password-min-length-error">
+                    Senha deve ter pelo menos 6 caracteres
+                </div>
+            </div>
+
+            <div>
+                <div class="txt"><label>Confirmar Senha:</label></div>
+                <input type="password" class="box" id="confirm-password" 
+                onchange="onChangeConfirmPassword()" placeholder="Confirme sua senha">
+
+                <div class="error" id="password-doesnt-match-error">
+                    Senha e Confirmar senha devem ser iguais
+                </div>
+            </div>
+
+            <div><button type="button" class="clear" onclick = "backLogin()">
+                Ir para Login</button></div>
+            <div><button disabled type="button" class="solid" id="register-button" 
+                onclick = "register()">Cadastrar</button></div>
+
+        </form>
+
+    </main>
+
+    <!--FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+    <script src="/js/init-firebase.js"></script>
+    
+
+    <!--==PROJECT==-->
+     <script src="/js/register.js"></script>
+     <script src="/js/global.js"></script>
+     <script src="/js/validaction.js"></script>
+    
+</body>
+</html>
