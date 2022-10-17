@@ -91,52 +91,6 @@ function isFormValid() {
 
 ///====================================================
 
-if (!isNewTransaction()) {
-    const uid = getTransactionUid();
-    findTransactionByUid(uid);
-}
-
-function getTransactionUid() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('uid');
-}
-
-
-function isNewTransaction() {
-    return getTransactionUid() ? false : true;
-}
-
-
-function findTransactionByUid(uid) {
-    //showLoading();
-
-    firebase.firestore()
-        .collection("user")
-        .doc(uid)
-        .get()
-        .then(doc => {
-            //hideLoading();
-            if (doc.exists) {
-                fillTransactionScreen(doc.data());
-                toggleSaveButtonDisable();
-            } else {
-                alert("Documento nao encontrado");
-                window.location.href = "../home/home.html";
-            }
-        })
-        .catch(() => {
-           // hideLoading();
-            alert("Erro ao recuperar documento");
-            window.location.href = "../home/home.html";
-        });
-}
-
-
-
-
-
-
-
 
 
 const form = {
