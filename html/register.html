@@ -11,7 +11,7 @@
     <!--STYLE-->
     <link rel="stylesheet" href="/css/global.css">
 
-    <title>OdontoWeb - login</title>
+    <title>OdontoWeb - Cadastro!</title>
 </head>
 
 <body>
@@ -24,32 +24,13 @@
 
         <form class="form-shild">
             <div>
-                <div class="txt"><label>Seu Nome:</label></div>
-                <input id="user" type="text" class="box"
-                 placeholder="Nome Completo">
-
-                 <div class="txt"><label>Sua Idade:</label></div>
-                <input id="age" type="number" class="box"
-                 placeholder="Quantos anos"> 
-            <div>
-                <div class="txt">Sexo:</div>
-                <label class="txt-radio" id="sex-m">Masc</label>
-                <input type="radio" name="type" class="cycle" checked>
-                <label class="txt-radio" id="sex-f">Femin</label>
-                <input type="radio" name="type" class="cycle">
-                <label class="txt-radio" id="sex-i">Não identificar</label>
-                <input type="radio" name="type" class="cycle">
-            </div>
 
                 <div class="txt"><label>Seu Email:</label></div>
                 <input id="email" type="email" class="box" onchange="onChangeEmail()"
                  placeholder="Seu email">
-            </div>
-
-           
+            </div>          
             
             <div>
-
                 <div class="error" id="email-required-error">
                     Email é obrigatório
                 </div>
@@ -64,7 +45,7 @@
                 <div class="error" id="password-required-error">
                     Senha é obrigatório
                 </div>
-                <div class="error" id="password-min-length-error">
+                <div class="error"id="password-min-length-error">
                     Senha deve ter pelo menos 6 caracteres
                 </div>
             </div>

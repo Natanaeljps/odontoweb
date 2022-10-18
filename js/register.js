@@ -1,9 +1,13 @@
 /*==SE JÁ ESYIVER LOGADO VAI DIRETO PARA HOME===*/
-/*firebase.auth().onAuthStateChanged(user => {
+
+
+
+firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        window.location.href = "/html/home.html";
+        window.location.href = "/html/services.html";
     }
-})*/
+})
+
 
 /*===CONFIRMAR E-MAIL===*/
 function onChangeEmail() {
@@ -31,6 +35,10 @@ function onChangeConfirmPassword() {
 }
 
 
+
+  
+
+
 function register() {
     //showLoading();
 
@@ -39,8 +47,8 @@ function register() {
     firebase.auth().createUserWithEmailAndPassword(
         email, password
     ).then(() => {
-     //   hideLoading();
-        window.location.href = "/html/home.html";
+       // hideLoading();
+        window.location.href = "../../pages/home/home.html";
     }).catch(error => {
        // hideLoading();
         alert(getErrorMessage(error));
@@ -97,10 +105,6 @@ const form = {
     user: ()=>document.getElementById("user"),
 
     age: ()=>document.getElementById("age"),
-
-    sexM: ()=>document.getElementById("sex-m"),
-    sexF: ()=>document.getElementById("sex-f"),
-    sexI: ()=>document.getElementById("sex-i"),
 
     email: () => document.getElementById("email"),
     emailRequiredError: () => document.getElementById("email-required-error"),

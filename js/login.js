@@ -1,7 +1,7 @@
 /*==SE JÁ ESYIVER LOGADO VAI DIRETO PARA HOME===*/
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        window.location.href = "/html/home.html";
+        window.location.href = "/html/services.html";
     }
 })
 
@@ -24,7 +24,7 @@ function login() {
         form.email().value, form.password().value
     ).then(() => {
        // hideLoading();
-        window.location.href = "/html/home.html";
+        window.location.href = "/html/services.html";
     }).catch(error => {
        // hideLoading();
         alert(getErrorMessage(error));
