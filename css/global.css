@@ -10,6 +10,7 @@ html{
 header{
     text-align: center;
     margin: 1.5rem 0;
+    
 }
 
 main{
@@ -45,6 +46,14 @@ button{
   }
 
   /***************MAIN****************/
+
+  div.container{
+    background: lightblue;
+    margin: 0% 10%;
+    padding: 2% 0;
+    box-shadow: 50%;
+    border-radius: 15%;
+  }
 
   .txt{
     font-family: var(--body-font);
@@ -103,11 +112,19 @@ button{
 
 
 
-   @media(min-width:800px){
+   @media(min-width:600){
 
     .error{
   
       margin-left: 35.7rem;
+    }
+
+    div.container{
+      background: lightblue;
+      margin: 0% 37%;
+      padding: 2% 0;
+      box-shadow: 50%;
+      border-radius: 15%;
     }
 
 
