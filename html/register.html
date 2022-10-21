@@ -23,12 +23,12 @@
     <main>
 
         <form class="form-shild">
-            <div>
+            <div class="container">
 
                 <div class="txt"><label>Seu Email:</label></div>
                 <input id="email" type="email" class="box" onchange="onChangeEmail()"
                  placeholder="Seu email">
-            </div>          
+                     
             
             <div>
                 <div class="error" id="email-required-error">
@@ -59,12 +59,14 @@
                     Senha e Confirmar senha devem ser iguais
                 </div>
             </div>
+            
+        
 
             <div><button type="button" class="clear" onclick = "backLogin()">
                 Ir para Login</button></div>
             <div><button disabled type="button" class="solid" id="register-button" 
                 onclick = "register()">Cadastrar</button></div>
-
+</div> 
         </form>
 
     </main>

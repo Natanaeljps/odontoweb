@@ -20,6 +20,8 @@ main{
 
 button{
   margin: 1.5rem 0;
+
+  font-size: 18px;
 }
 
 
@@ -49,14 +51,18 @@ button{
 
   div.container{
     background: lightblue;
-    margin: 0% 10%;
+    margin: 0% 5%;
     padding: 2% 0;
     box-shadow: 50%;
-    border-radius: 15%;
+    border-radius: 20%;
+
+    box-shadow: 10px 6px 6px gray;
+
   }
 
   .txt{
     font-family: var(--body-font);
+    font-size: 18px;
     font-weight: bold;
 
     margin: 1rem 0;
@@ -70,7 +76,7 @@ button{
 
   .box{ 
     text-align: center;
-    height: 2rem;
+    height: 3rem;
     width: 15rem;
     border: none;
     border-radius: 1rem;
@@ -110,23 +116,21 @@ button{
     font-weight: bold;
    }
 
+   /*responsy*/
 
-
-   @media(min-width:600){
+   @media(min-width: 800px){
 
     .error{
   
       margin-left: 35.7rem;
     }
 
-    div.container{
-      background: lightblue;
-      margin: 0% 37%;
-      padding: 2% 0;
-      box-shadow: 50%;
-      border-radius: 15%;
+    form div.container{
+      margin: 0 38% 10% 38%;
+
     }
 
 
 
    }
+   

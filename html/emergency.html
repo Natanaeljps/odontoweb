@@ -10,17 +10,37 @@
      <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Concert+One&family=Fredoka+One&display=swap" rel="stylesheet">
      <!--STYLE-->
      <link rel="stylesheet" href="/css/global.css">
- 
+     <link rel="stylesheet" href="/css/services.css">
+    
+
     <title>Agenda de Emergência</title>
 </head>
 <body>
+    
+    <header>
+        <button class="clear" type="button" onclick="logout()">Sair</button>    
+    </header>
 
-    <h1>EMERGÊNCIA</h1>
+
+<ol id="transacoes">
+        
+    </ol>
+
 
 
 <div id="calendary">
     
 </div>    
     
+
+    <!--FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+
+    <script src="/js/init-firebase.js"></script>
+
+    <!--==PROJECT==-->
+    <script src="/js/global.js"></script>
 </body>
 </html>
